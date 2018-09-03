@@ -15,18 +15,7 @@ import { Component } from '@angular/core';
       ])
     ])
   ],
-  styles: [`
-    :host {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      height: 100vh;
-      width: 100vw;
-      background: url("assets/bg_blur.jpg") no-repeat center #666666;
-      background-size: cover;
-      overflow: auto;
-    }
-  `]
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
 }
