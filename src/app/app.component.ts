@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
   animations: [
     trigger('enter', [
       state('in', style({transform: 'translateY(0)'})),
-      transition('void => *', [
+      transition('void => in', [
         style({transform: 'translateY(-120%)'}),
         animate('2s cubic-bezier(0.2,1,0.3,1)')
       ])
@@ -20,7 +20,7 @@ import { Component } from '@angular/core';
     trigger('side', [
       state('front', style({transform: 'rotateY(0deg)'})),
       state('back', style({transform: 'rotateY(180deg)'})),
-      transition('* => *', [
+      transition('front <=> back', [
         animate('2s cubic-bezier(0.2,1,0.3,1)')
       ])
     ])
