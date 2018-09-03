@@ -1,12 +1,10 @@
 :host {
   display: block;
-  height: 500px;
-  width: 400px;
   background: url("../../assets/bg.jpg") no-repeat top center white;
   background-size: contain;
+  position: relative;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.8) 0 0 6px 0;
-  position: relative;
 }
 
 .avatar-wrap {
@@ -66,5 +64,6 @@
     display: inline-block;
     color: steelblue;
     font-size: 30px;
+    cursor: pointer;
   }
 }

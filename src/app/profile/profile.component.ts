@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-profile',
@@ -13,13 +13,19 @@ import { Component } from '@angular/core';
         <p class="text">{{"Keep in touch" | uppercase}}</p>
       </div>
       <div class="link-wrap">
-        <a class="link" href="https://www.linkedin.com/in/fengxuprofile/" target="_blank"><i class="anticon anticon-linkedin"></i></a>
-        <a class="link" href="https://github.com/ngfx/" target="_blank"><i class="anticon anticon-github"></i></a>
-        <a class="link" href="mailto:me@fengxu.me"><i class="anticon anticon-mail"></i></a>
+        <a class="link" href="https://github.com/ngfx/" target="_blank" title="GITHUB"><i class="anticon anticon-github"></i></a>
+        <a class="link" href="https://www.linkedin.com/in/fengxuprofile/" target="_blank" title="LINKEDIN"><i class="anticon anticon-linkedin"></i></a>
+        <a class="link" href="mailto:me@fengxu.me"><i class="anticon anticon-mail" title="EMAIL"></i></a>
+        <span class="link" (click)="gotoBack()" title="WECHAT"><i class="anticon anticon-wechat"></i></span>
       </div>
     </div>
   `,
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent {
+  @Output() switchSide: EventEmitter<void> = new EventEmitter();
+
+  gotoBack(): void {
+    this.switchSide.emit();
+  }
 }

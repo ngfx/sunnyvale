@@ -9,3 +9,36 @@
   background: url("../assets/bg_blur.jpg") no-repeat center #666666;
   background-size: cover;
 }
+
+/* animation */
+
+:host {
+  perspective: 1000px;
+}
+
+.card {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 500px;
+  width: 400px;
+}
+
+.card-front, .card-back {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card-front {
+  z-index: 1;
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  z-index: 0;
+  transform: rotateY(180deg);
+}

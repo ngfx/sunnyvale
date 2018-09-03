@@ -1,0 +1,67 @@
+:host {
+  display: block;
+  position: relative;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 6px 0;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url("../../assets/bg_blur.jpg") no-repeat center white;
+    background-size: cover;
+    filter: brightness(1.5);
+    border-radius: 6px;
+  }
+}
+
+.text-wrap {
+  text-align: center;
+  height: 100px;
+  line-height: 120px;
+  font-weight: 200;
+  font-size: 24px;
+  
+  .text + .text {
+    margin-left: 20px;
+  }
+}
+
+.code-wrap {
+  height: 300px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  
+  .code {
+    display: block;
+    height: 260px;
+    width: 260px;
+    background: url("../../assets/qrcode.png") no-repeat center;
+    background-size: contain;
+  }
+}
+
+.link-wrap {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  cursor: pointer;
+  
+  .link {
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+  }
+}

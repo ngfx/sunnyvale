@@ -7,13 +7,15 @@ import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { ProfileComponent } from './profile/profile.component';
+import { WechatComponent } from './wechat/wechat.component';
 
 registerLocaleData(zh);
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent
+    ProfileComponent,
+    WechatComponent
   ],
   imports: [
     BrowserModule,
