@@ -4,7 +4,8 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  overflow: auto;
+  padding: 60px 0;
   background: url("../assets/bg_blur.jpg") no-repeat center #666666;
   background-size: cover;
-  overflow: auto;
 }

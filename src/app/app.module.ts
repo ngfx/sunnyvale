@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
-import { AvatarComponent } from './avatar/avatar.component';
 import { ProfileComponent } from './profile/profile.component';
 
 registerLocaleData(zh);
@@ -14,8 +13,7 @@ registerLocaleData(zh);
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent,
-    AvatarComponent
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

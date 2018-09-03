@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
     trigger('enter', [
       state('in', style({transform: 'translateY(0)'})),
       transition('void => *', [
-        style({transform: 'translateY(-100%)'}),
+        style({transform: 'translateY(-120%)'}),
         animate('2s cubic-bezier(0.2,1,0.3,1)')
       ])
     ])
