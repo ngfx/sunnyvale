@@ -15,7 +15,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
       <div class="link-wrap">
         <a class="link" href="https://github.com/ngfx/" target="_blank" title="GITHUB"><i class="anticon anticon-github"></i></a>
         <a class="link" href="https://www.linkedin.com/in/fengxuprofile/" target="_blank" title="LINKEDIN"><i class="anticon anticon-linkedin"></i></a>
-        <a class="link" href="mailto:me@fengxu.me"><i class="anticon anticon-mail" title="EMAIL"></i></a>
+        <a class="link" href="mailto:i@fengxu.me"><i class="anticon anticon-mail" title="EMAIL"></i></a>
         <span class="link" (click)="gotoBack()" title="WECHAT"><i class="anticon anticon-wechat"></i></span>
       </div>
     </div>
